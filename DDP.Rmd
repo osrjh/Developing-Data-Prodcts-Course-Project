@@ -29,9 +29,13 @@ The Shiny app code is [here](https://github.com/osrjh/Developing-Data-Prodcts-Co
 
 * Allows you to plot numeric factors against fuel consumption using the mtcars dataset.
 
+```{r, echo = T}
+head(mtcars)
+```
+
 * You select variables for plotting and building simple linear models. 
 
-* The output is a scatterplot with a prediction of miles per gallon calculated with the regression models. The sliders move the dependent prediction values.
+* The output is a scatterplot with a prediction of miles per gallon calculated using the regression models. 
 
 ## App Layout
 
