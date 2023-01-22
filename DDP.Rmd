@@ -1,0 +1,53 @@
+---
+title: "Developing Data Products Course Project"
+author: "Jack"
+date: '`r Sys.Date()`'
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Introduction
+
+This presentation is the final course project of the Developing Data Products course in the Coursera Data Science Specialisation.
+
+It has been prepared using Slidify in RStudio.
+
+The Shiny application is [here](https://osrjh.shinyapps.io/DevelopingDataProductsCourseProject/)
+
+The Shiny app code is [here](https://github.com/osrjh/Developing-Data-Prodcts-Course-Project)
+
+* The app was created using Shiny.
+
+* The source code is split up into two files 
+  + server.R (back-end)
+  + ui.R (user-interface)
+
+## App Functions
+
+* Allows you to plot numeric factors against fuel consumption using the mtcars dataset.
+
+* You select variables for plotting and building simple linear models. 
+
+* The output is a scatterplot with a prediction of miles per gallon calculated with the regression models. The sliders move the dependent prediction values.
+
+## App Layout
+
+* There are two panels on the app
+  + Side panel (on the left)
+  + Main panel
+  
+* The main panel has a brief summary and instructions on how to use the app. It also features the scatterplot and predicted value.
+
+---
+
+* The side panel lists the available variables in the dataset, features dropdowns to select the dependent variable and scatterplot fill option. 
+
+* There are also checkboxes to show/hide the plot labels.
+
+* The slider will change depending on the variable selected and can be used to alter the value of the dependent variable when inserted into the regression formula.
+
+* Finally, the slope and the intercept of the regression formula are listed at the bottom.
+
